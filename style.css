@@ -380,3 +380,27 @@
 .footer-socials a:hover {
     color: #ffffff;
 }
+
+
+/* ================= Footer Links Styles ================= */
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* কপিরাইট টেক্সট থেকে লিংকের দূরত্ব */
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px; /* প্রাইভেসী পলিসি এবং টার্মসের মধ্যকার দূরত্ব */
+}
+
+.footer-links a {
+    color: #94a3b8; /* ফিগমা অনুযায়ী হালকা ধূসর রঙ */
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff; /* মাউস নিলে সাদা হবে */
+}

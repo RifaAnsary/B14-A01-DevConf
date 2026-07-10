@@ -55,7 +55,7 @@
 
 /* রেজিষ্টার বাটন স্টাইল */
 .btn-primary {
-    background-color: #2563eb; /* ফিগমার মতো নীল কালার */
+    background-color: #2563eb; /* figmar moto nil colour*/
     color: #ffffff;
     padding: 12px 24px;
     border: none;
@@ -275,4 +275,108 @@
 .pricing-card:hover {
     transform: translateY(-5px); /* mouse nile samanno nacha nachi korbe hehe */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* dekhte mashaallah sundro lagbe */
+}
+
+
+/* ================= FAQ Section Styles ================= */
+.faq-section {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.faq-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.faq-item h4 {
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.faq-item p {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+}
+.faq-item {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    border-radius: 8px;
+
+    /* অ্যানিমেশন স্মুথ করার জন্য ট্রানজিশন যোগ করা হলো */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+/* mouse nile halka opore uthbe and halka shadow porbe*/
+.faq-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1; /* বর্ডার কালার সামান্য ডার্ক হবে */
+}
+
+/* ================= Footer Section Styles ================= */
+.site-footer {
+    background-color: #0f172a; 
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* bam pashe copyright section */
+.footer-copyright p {
+    color: #94a3b8;
+    margin: 0;
+    font-weight: 400;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-socials a {
+    color: #94a3b8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.footer-socials a svg {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-socials a:hover {
+    color: #ffffff;
 }

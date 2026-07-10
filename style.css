@@ -214,3 +214,65 @@
     line-height: 1.5;
 }
 
+.pricing-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pricing-card {
+    border: 1px solid #e5e7eb;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-card {
+    background-color: #0f172a;
+    color: white;
+}
+
+.pricing-card h4 { font-size: 14px; margin-bottom: 10px; }
+.pricing-card h3 { font-size: 40px; margin-bottom: 5px; }
+
+.pricing-card ul {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.pricing-card {
+  
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* অ্যানিমেশন স্মুথ করার জন্য */
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px); /* mouse nile samanno nacha nachi korbe hehe */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* dekhte mashaallah sundro lagbe */
+}

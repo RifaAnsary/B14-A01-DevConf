@@ -134,3 +134,83 @@
 .hero-section .btn-primary:hover {
     background-color: #1a44c2;
 }
+/* Speakers Section Styling */
+.speakers-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.speakers-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 48px;
+}
+
+/* 2x2 Grid Layout */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Card Styling */
+.speaker-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Container */
+.speaker-img-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 11; /* এটি সব কার্ডের ইমেজের সাইজ একদম সমান রাখবে */
+    overflow: hidden;
+    background-color: #f3f4f6;
+}
+
+.speaker-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%; /* মুখ বা ফেসকে ফোকাসে রাখবে */
+}
+
+/* Card Body Info */
+.speaker-info {
+    padding: 24px;
+}
+
+.speaker-track {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2563eb; /* নীল রঙের ট্র্যাক লেবেল */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.speaker-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.speaker-title {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+

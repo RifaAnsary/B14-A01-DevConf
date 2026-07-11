@@ -408,13 +408,11 @@
 
 /* ================= Mobile Responsive Fix ================= */
 @media (max-width: 768px) {
-    /* বডি যেন স্ক্রিনের বাইরে না ছড়ায় */
     html, body {
         overflow-x: hidden;
         width: 100%;
     }
 
-    /* ন্যাভবার বা হেডার ফিক্স */
     .navbar-container {
         flex-direction: column;
         gap: 12px;
@@ -429,13 +427,32 @@
         padding: 0;
     }
 
-    /* অন্যান্য বড় সেকশন (যেমন স্পিকার ও প্রাইসিং) ফিক্স */
-    .site-footer .footer-container,
-    .pricing-container, 
-    .speakers-container { 
+    /* ফুটার এবং বাকি কন্টেইনার ফিক্স */
+    .site-footer .footer-container { 
         flex-direction: column !important;
         align-items: center !important;
         text-align: center;
         gap: 20px;
+    }
+
+    /* স্পিকার ও প্রাইসিং-এর ভেতরের সব ফ্লেক্স/গ্রিড কন্টেইনারকে নিচে নিচে নামানোর জন্য গ্লোবাল ফিক্স */
+    .speakers-container, 
+    .pricing-container, 
+    .pricing-cards,
+    [class*="pricing"], 
+    [class*="speaker"] { 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 24px !important;
+    }
+
+    /* কার্ডগুলোর সাইজ মোবাইলের স্ক্রিন অনুযায়ী ঠিক করা */
+    .pricing-card, 
+    [class*="-card"] {
+        width: 90% !important;
+        max-width: 350px !important;
+        margin: 0 auto !important;
     }
 }

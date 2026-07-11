@@ -404,3 +404,38 @@
 .footer-links a:hover {
     color: #ffffff; /* মাউস নিলে সাদা হবে */
 }
+
+
+/* ================= Mobile Responsive Fix ================= */
+@media (max-width: 768px) {
+    /* বডি যেন স্ক্রিনের বাইরে না ছড়ায় */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* ন্যাভবার বা হেডার ফিক্স */
+    .navbar-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .center-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* অন্যান্য বড় সেকশন (যেমন স্পিকার ও প্রাইসিং) ফিক্স */
+    .site-footer .footer-container,
+    .pricing-container, 
+    .speakers-container { 
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 20px;
+    }
+}

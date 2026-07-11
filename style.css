@@ -413,6 +413,7 @@
         width: 100%;
     }
 
+    /* ন্যাভবার সোজা করা */
     .navbar-container {
         flex-direction: column;
         gap: 12px;
@@ -427,32 +428,37 @@
         padding: 0;
     }
 
-    /* ফুটার এবং বাকি কন্টেইনার ফিক্স */
+    /* স্পিকার গ্রিড মোবাইলে নিচে নিচে নামানো */
+    .speakers-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    /* প্রাইসিং সেকশনের সম্ভাব্য সব গ্রিড নিচে নিচে নামানো */
+    .pricing-grid,
+    .pricing-cards,
+    .pricing-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 24px !important;
+    }
+
+    /* কার্ডগুলোর সাইজ ঠিক করা যেন স্ক্রিনের বাইরে না যায় */
+    .speaker-card,
+    .pricing-card,
+    [class*="-card"] {
+        width: 90% !important;
+        max-width: 350px !important;
+    }
+
+    /* ফুটার ফিক্স */
     .site-footer .footer-container { 
         flex-direction: column !important;
         align-items: center !important;
         text-align: center;
         gap: 20px;
-    }
-
-    /* স্পিকার ও প্রাইসিং-এর ভেতরের সব ফ্লেক্স/গ্রিড কন্টেইনারকে নিচে নিচে নামানোর জন্য গ্লোবাল ফিক্স */
-    .speakers-container, 
-    .pricing-container, 
-    .pricing-cards,
-    [class*="pricing"], 
-    [class*="speaker"] { 
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        gap: 24px !important;
-    }
-
-    /* কার্ডগুলোর সাইজ মোবাইলের স্ক্রিন অনুযায়ী ঠিক করা */
-    .pricing-card, 
-    [class*="-card"] {
-        width: 90% !important;
-        max-width: 350px !important;
-        margin: 0 auto !important;
     }
 }
